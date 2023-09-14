@@ -6,46 +6,53 @@
   <title>Regex Exercises</title>
 </head>
 <body>
-  Exercise 1 
-  Regexp Golf
-  
-  Regular expressions for each of the given patterns:
-  
-  1. `car and cat`:
+  <h1>Regex Exercises</h1>
+
+  <h2>Exercise 1</h2> 
+  <h3>Regexp Golf</h2>
+  <h4>Regular expressions for each of the given patterns:</h4>
+  <ol>
+    <li>
+      1. `car and cat`:
      Regular Expression: `ca[rt]`
-     
-  2. `pop and prop`:
+    </li>
+    <li>
+      2. `pop and prop`:
      Regular Expression: `p[op]`
-  
-  3. `ferret, ferry, and ferrari`:
+    </li>
+    <li>
+      3. `ferret, ferry, and ferrari`:
      Regular Expression: `ferr(et|y|ari)`
-  
-  4. `Any word ending in ious`:
+    </li>
+    <li>
+      4. `Any word ending in ious`:
      Regular Expression: `\b\w*ious\b`
-  
-  5. `A whitespace character followed by a period, comma, colon, or semicolon`:
-     Regular Expression: `\s[.,:;]`
-  
-  6. `A word longer than six letters`:
+    </li>
+    <li>
+      5. `A whitespace character followed by a period, comma, colon, or semicolon`:
+      Regular Expression: `\s[.,:;]` 
+    </li>
+    <li>
+      6. `A word longer than six letters`:
      Regular Expression: `\b\w{7,}\b`
+    </li>
+    7. `A word without the letter e (or E)`:
+    Regular Expression: `\b[^eE]+\b`
+  </ol>
+
+  <h2>Exercise 2</h2>
+  <h3>Quoting Style</h3>
+  <p>let message = "Hi, 'What do you do for a living?,' hmmm, 'I am a developer!'";</p>
   
-  7. `A word without the letter e (or E)`:
-     Regular Expression: `\b[^eE]+\b`
+  <!-- Replacing single quotes in dialogue with double quotes -->
+  <p>message = message.replace(/'([^']+)'/g, '"$1"');</p> 
   
-  Exercise 2
-  Quoting Style
-  let story = "Hi, 'What do you do for a living?,' hmmm, 'I am a developer!'";
+  <p>console.log(message);</p>
   
-  // Replacing single quotes in dialogue with double quotes
-  story = story.replace(/'([^']+)'/g, '"$1"');
+  <p>output: "Hi, "What do you do for a living?," hmmm, "I am a developer""</p>
   
-  console.log(story);
-  
-  output: "Hi, "What do you do for a living?," hmmm, "I am a developer""
-  
-  Exercise 3
-  Number Again
-  /^[+-]?(\d+(\.\d*)?|\.\d+)([eE][+-]?\d+)?$/
-  
+  <h2>Exercise 3</h2>
+  <h3>Number Again</h3>
+  <p>/^[+-]?(\d+(\.\d*)?|\.\d+)([eE][+-]?\d+)?$/</p> 
 </body>
 </html>

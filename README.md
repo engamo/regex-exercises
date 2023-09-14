@@ -26,12 +26,12 @@ Regular expressions for each of the given patterns:
 
 Exercise 2
 Quoting Style
-let story = "Hi, 'What do you do for a living?,' hmmm, 'I am a developer!'";
+let message = "Hi, 'What do you do for a living?,' hmmm, 'I am a developer!'";
 
 // Replacing single quotes in dialogue with double quotes
-story = story.replace(/'([^']+)'/g, '"$1"');
+message = message.replace(/'([^']+)'/g, '"$1"');
 
-console.log(story);
+console.log(message);
 
 output: "Hi, "What do you do for a living?," hmmm, "I am a developer""
 
